@@ -1,0 +1,256 @@
+[{
+  "id": "1",
+  "name": "GRASS",
+  "color": [127, 178, 56],
+  "blocks": ["Grass Block", "Slime Block"]
+}, {
+  "id": "2",
+  "name": "SAND",
+  "color": [247, 233, 163],
+  "blocks": ["Sand", "Birch Planks", "Birch Log", "Stripped Birch Log", "Birch Wood", "Stripped Birch Wood", "Birch Sign", "Birch Pressure Plate", "Birch Trapdoor", "Birch Stairs", "Birch Slab", "Birch Fence Gate", "Birch Fence", "Birch Door", "Sandstone", "Glowstone", "End Stone", "End Stone Bricks", "Bone Block", "Turtle Egg", "Scaffolding"]
+}, {
+  "id": "3",
+  "name": "WOOL",
+  "color": [199, 199, 199],
+  "blocks": ["Cobweb", "Mushroom Stem", "Beds"]
+}, {
+  "id": "4",
+  "name": "FIRE",
+  "color": [255, 0, 0],
+  "blocks": ["Lava", "TNT", "Fire", "Redstone Block"]
+}, {
+  "id": "5",
+  "name": "ICE",
+  "color": [160, 160, 255],
+  "blocks": ["Ice", "Frosted Ice", "Packed Ice", "Blue Ice"]
+}, {
+  "id": "6",
+  "name": "METAL",
+  "color": [167, 167, 167],
+  "blocks": ["Block of Iron", "Iron Door", "Brewing Stand", "Heavy Weighted Pressure Plate", "Iron Trapdoor", "Lantern", "Anvil", "Grindstone"]
+}, {
+  "id": "7",
+  "name": "PLANT",
+  "color": [0, 124, 0],
+  "blocks": ["Saplings", "Flowers", "Mushrooms", "Wheat", "Sugar Cane", "Pumpkin Stem", "Melon Stem", "Lily Pad", "Cocoa", "Carrots", "Potatoes", "Beetroots", "Sweet Berry Bush", "Grass", "Fern", "Vines", "Leaves", "Cactus", "Bamboo"]
+}, {
+  "id": "8",
+  "name": "SNOW",
+  "color": [255, 255, 255],
+  "blocks": ["Snow", "Snow Block", "White Bed", "White Wool", "White Stained Glass", "White Stained Glass Pane", "White Carpet", "White Banner", "White Shulker Box", "White Glazed Terracotta", "White Concrete", "White Concrete Powder"]
+}, {
+  "id": "9",
+  "name": "CLAY",
+  "color": [164, 168, 184],
+  "blocks": ["Clay", "Infested Blocks"]
+}, {
+  "id": "10",
+  "name": "DIRT",
+  "color": [151, 109, 77],
+  "blocks": ["Dirt", "Coarse Dirt", "Farmland", "Grass Path", "Granite", "Polished Granite", "Jungle Planks", "Jungle Log", "Stripped Jungle Log", "Jungle Wood", "Stripped Jungle Wood", "Jungle Sign", "Jungle Pressure Plate", "Jungle Trapdoor", "Jungle Stairs", "Jungle Slab", "Jungle Fence Gate", "Jungle Fence", "Jungle Door", "Jukebox", "Brown Mushroom Block"]
+}, {
+  "id": "11",
+  "name": "STONE",
+  "color": [112, 112, 112],
+  "blocks": ["Stone Slab", "Stone Stairs", "Andesite", "Polished Andesite", "Cobblestone", "Bedrock", "Gold Ore", "Iron Ore", "Coal Ore", "Lapis Lazuli Ore", "Dispenser", "Mossy Cobblestone", "Spawner", "Diamond Ore", "Furnace", "Stone Pressure Plate", "Redstone Ore", "Stone Bricks", "Emerald Ore", "Ender Chest", "Dropper", "Smooth Stone", "Observer", "Smoker", "Blast Furnace", "Stonecutter", "Sticky Piston", "Piston", "Piston Head", "Gravel", "Acacia Log", "Cauldron", "Hopper"]
+}, {
+  "id": "12",
+  "name": "WATER",
+  "color": [64, 64, 255],
+  "blocks": ["Kelp", "Seagrass", "Water", "Bubble Column"]
+}, {
+  "id": "13",
+  "name": "WOOD",
+  "color": [143, 119, 72],
+  "blocks": ["Oak Planks", "Oak Log", "Stripped Oak Log", "Oak Wood", "Stripped Oak Wood", "Oak Sign", "Oak Door", "Oak Pressure Plate", "Oak Fence", "Oak Trapdoor", "Oak Fence Gate", "Oak Slab", "Oak Stairs", "Note Block", "Bookshelf", "Chest", "Crafting Table", "Trapped Chest", "Daylight Detector", "Loom", "Barrel", "Cartography Table", "Fletching Table", "Lectern", "Smithing Table", "Composter", "Bamboo Sapling", "Dead Bush", "Petrified Oak Slab", "Beehive", "Bee Nest"]
+}, {
+  "id": "14",
+  "name": "QUARTZ",
+  "color": [255, 252, 245],
+  "blocks": ["Diorite", "Polished Diorite", "Birch Log", "Quartz Block", "Sea Lantern"]
+}, {
+  "id": "15",
+  "name": "COLOR_ORANGE",
+  "color": [216, 127, 51],
+  "blocks": ["Acacia Planks", "Acacia Log", "Stripped Acacia Log", "Stripped Acacia Wood", "Acacia Sign", "Acacia Trapdoor", "Acacia Slab", "Red Sand", "Orange Wool", "Orange Carpet", "Orange Shulker Box", "Orange Bed", "Orange Stained Glass", "Orange Stained Glass Pane", "Orange Banner", "Orange Glazed Terracotta", "Orange Concrete", "Orange Concrete Powder", "Pumpkin", "Carved Pumpkin", "Jack o'Lantern", "Terracotta", "Red Sandstone", "Honey Block", "Honeycomb Block"]
+}, {
+  "id": "16",
+  "name": "COLOR_MAGENTA",
+  "color": [178, 76, 216],
+  "blocks": ["Magenta Wool", "Magenta Carpet", "Magenta Shulker Box", "Magenta Bed", "Magenta Stained Glass", "Magenta Stained Glass Pane", "Magenta Banner", "Magenta Glazed Terracotta", "Magenta Concrete", "Magenta Concrete Powder", "Purpur Block"]
+}, {
+  "id": "17",
+  "name": "COLOR_LIGHT_BLUE",
+  "color": [102, 153, 216],
+  "blocks": ["Light Blue Wool", "Light Blue Carpet", "Light Blue Shulker Box", "Light Blue Bed", "Light Blue Stained Glass", "Light Blue Stained Glass Pane", "Light Blue Banner", "Light Blue Glazed Terracotta", "Light Blue Concrete", "Light Blue Concrete Powder"]
+}, {
+  "id": "18",
+  "name": "COLOR_YELLOW",
+  "color": [229, 229, 51],
+  "blocks": ["Sponge", "Wet Sponge", "Yellow Wool", "Yellow Carpet", "Yellow Shulker Box", "Yellow Bed", "Yellow Stained Glass", "Yellow Stained Glass Pane", "Yellow Banner", "Yellow Glazed Terracotta", "Yellow Concrete", "Yellow Concrete Powder", "Hay Bale", "Horn Coral Block", "Horn Coral", "Horn Coral Fan"]
+}, {
+  "id": "19",
+  "name": "COLOR_LIGHT_GREEN",
+  "color": [127, 204, 25],
+  "blocks": ["Lime Wool", "Lime Carpet", "Lime Shulker Box", "Lime Bed", "Lime Stained Glass", "Lime Stained Glass Pane", "Lime Banner", "Lime Glazed Terracotta", "Lime Concrete", "Lime Concrete Powder", "Melon"]
+}, {
+  "id": "20",
+  "name": "COLOR_PINK",
+  "color": [242, 127, 165],
+  "blocks": ["Pink Wool", "Pink Carpet", "Pink Shulker Box", "Pink Bed", "Pink Stained Glass", "Pink Stained Glass Pane", "Pink Banner", "Pink Glazed Terracotta", "Pink Concrete", "Pink Concrete Powder", "Brain Coral Block", "Brain Coral", "Brain Coral Fan"]
+}, {
+  "id": "21",
+  "name": "COLOR_GRAY",
+  "color": [76, 76, 76],
+  "blocks": ["Acacia Wood", "Gray Wool", "Gray Carpet", "Gray Shulker Box", "Gray Bed", "Gray Stained Glass", "Gray Stained Glass Pane", "Gray Banner", "Gray Glazed Terracotta", "Gray Concrete", "Gray Concrete Powder", "Dead Coral Blocks", "Dead Coral", "Dead Coral Fans"]
+}, {
+  "id": "22",
+  "name": "COLOR_LIGHT_GRAY",
+  "color": [153, 153, 153],
+  "blocks": ["Light Gray Wool", "Light Gray Carpet", "Light Gray Shulker Box", "Light Gray Bed", "Light Gray Stained Glass", "Light Gray Stained Glass Pane", "Light Gray Banner", "Light Gray Glazed Terracotta", "Light Gray Concrete", "Light Gray Concrete Powder", "Structure Block", "Jigsaw Block"]
+}, {
+  "id": "23",
+  "name": "COLOR_CYAN",
+  "color": [76, 127, 153],
+  "blocks": ["Cyan Wool", "Cyan Carpet", "Cyan Shulker Box", "Cyan Bed", "Cyan Stained Glass", "Cyan Stained Glass Pane", "Cyan Banner", "Cyan Glazed Terracotta", "Cyan Concrete", "Cyan Concrete Powder", "Prismarine"]
+}, {
+  "id": "24",
+  "name": "COLOR_PURPLE",
+  "color": [127, 63, 178],
+  "blocks": ["Shulker Box", "Purple Wool", "Purple Carpet", "Purple Bed", "Purple Stained Glass", "Purple Stained Glass Pane", "Purple Banner", "Purple Glazed Terracotta", "Purple Concrete", "Purple Concrete Powder", "Mycelium", "Chorus Plant", "Chorus Flower", "Repeating Command Block", "Bubble Coral Block", "Bubble Coral", "Bubble Coral Fan"]
+}, {
+  "id": "25",
+  "name": "COLOR_BLUE",
+  "color": [51, 76, 178],
+  "blocks": ["Blue Wool", "Blue Carpet", "Blue Shulker Box", "Blue Bed", "Blue Stained Glass", "Blue Stained Glass Pane", "Blue Banner", "Blue Glazed Terracotta", "Blue Concrete", "Blue Concrete Powder", "Tube Coral Block", "Tube Coral", "Tube Coral Fan"]
+}, {
+  "id": "26",
+  "name": "COLOR_BROWN",
+  "color": [102, 76, 51],
+  "blocks": ["Dark Oak Planks", "Dark Oak Log", "Stripped Dark Oak Log", "Dark Oak Wood", "Stripped Dark Oak Wood", "Dark Oak Sign", "Dark Oak Pressure Plate", "Dark Oak Trapdoor", "Dark Oak Stairs", "Dark Oak Slab", "Dark Oak Fence Gate", "Dark Oak Fence", "Dark Oak Door", "Spruce Log", "Brown Wool", "Brown Carpet", "Brown Shulker Box", "Brown Bed", "Brown Stained Glass", "Brown Stained Glass Pane", "Brown Banner", "Brown Glazed Terracotta", "Brown Concrete", "Brown Concrete Powder", "Soul Sand", "Command Block"]
+}, {
+  "id": "27",
+  "name": "COLOR_GREEN",
+  "color": [102, 127, 51],
+  "blocks": ["Green Wool", "Green Carpet", "Green Shulker Box", "Green Bed", "Green Stained Glass", "Green Stained Glass Pane", "Green Banner", "Green Glazed Terracotta", "Green Concrete", "Green Concrete Powder", "End Portal Frame", "Chain Command Block", "Dried Kelp Block", "Sea Pickle"]
+}, {
+  "id": "28",
+  "name": "COLOR_RED",
+  "color": [153, 51, 51],
+  "blocks": ["Red Wool", "Red Carpet", "Red Shulker Box", "Red Bed", "Red Stained Glass", "Red Stained Glass Pane", "Red Banner", "Red Glazed Terracotta", "Red Concrete", "Red Concrete Powder", "Bricks", "Red Mushroom Block", "Nether Wart", "Enchanting Table", "Nether Wart Block", "Fire Coral Block", "Fire Coral", "Fire Coral Fan"]
+}, {
+  "id": "29",
+  "name": "COLOR_BLACK",
+  "color": [25, 25, 25],
+  "blocks": ["Black Wool", "Black Carpet", "Black Shulker Box", "Black Bed", "Black Stained Glass", "Black Stained Glass Pane", "Black Banner", "Black Glazed Terracotta", "Black Concrete", "Black Concrete Powder", "Obsidian", "End Portal", "Dragon Egg", "Block of Coal", "End Gateway"]
+}, {
+  "id": "30",
+  "name": "GOLD",
+  "color": [250, 238, 77],
+  "blocks": ["Block of Gold", "Light Weighted Pressure Plate", "Bell"]
+}, {
+  "id": "31",
+  "name": "DIAMOND",
+  "color": [92, 219, 213],
+  "blocks": ["Block of Diamond", "Beacon", "Prismarine Bricks", "Dark Prismarine", "Conduit"]
+}, {
+  "id": "32",
+  "name": "LAPIS",
+  "color": [74, 128, 255],
+  "blocks": ["Lapis Lazuli Block"]
+}, {
+  "id": "33",
+  "name": "EMERALD",
+  "color": [0, 217, 58],
+  "blocks": ["Block of Emerald"]
+}, {
+  "id": "34",
+  "name": "PODZOL",
+  "color": [129, 86, 49],
+  "blocks": ["Podzol", "Spruce Planks", "Spruce Log", "Stripped Spruce Log", "Spruce Wood", "Stripped Spruce Wood", "Spruce Sign", "Spruce Pressure Plate", "Spruce Trapdoor", "Spruce Stairs", "Spruce Slab", "Spruce Fence Gate", "Spruce Fence", "Spruce Door", "Oak Log", "Jungle Log", "Campfire"]
+}, {
+  "id": "35",
+  "name": "NETHER",
+  "color": [112, 2, 0],
+  "blocks": ["Netherrack", "Nether Bricks", "Nether Quartz Ore", "Magma Block", "Red Nether Bricks"]
+}, {
+  "id": "36",
+  "name": "TERRACOTTA_WHITE",
+  "color": [209, 177, 161],
+  "blocks": ["White Terracotta"]
+}, {
+  "id": "37",
+  "name": "TERRACOTTA_ORANGE",
+  "color": [159, 82, 36],
+  "blocks": ["Orange Terracotta"]
+}, {
+  "id": "38",
+  "name": "TERRACOTTA_MAGENTA",
+  "color": [149, 87, 108],
+  "blocks": ["Magenta Terracotta"]
+}, {
+  "id": "39",
+  "name": "TERRACOTTA_LIGHT_BLUE",
+  "color": [112, 108, 138],
+  "blocks": ["Light Blue Terracotta"]
+}, {
+  "id": "40",
+  "name": "TERRACOTTA_YELLOW",
+  "color": [186, 133, 36],
+  "blocks": ["Yellow Terracotta"]
+}, {
+  "id": "41",
+  "name": "TERRACOTTA_LIGHT_GREEN",
+  "color": [103, 117, 53],
+  "blocks": ["Lime Terracotta"]
+}, {
+  "id": "42",
+  "name": "TERRACOTTA_PINK",
+  "color": [160, 77, 78],
+  "blocks": ["Pink Terracotta"]
+}, {
+  "id": "43",
+  "name": "TERRACOTTA_GRAY",
+  "color": [57, 41, 35],
+  "blocks": ["Gray Terracotta"]
+}, {
+  "id": "44",
+  "name": "TERRACOTTA_LIGHT_GRAY",
+  "color": [135, 107, 98],
+  "blocks": ["Light Gray Terracotta"]
+}, {
+  "id": "45",
+  "name": "TERRACOTTA_CYAN",
+  "color": [87, 92, 92],
+  "blocks": ["Cyan Terracotta"]
+}, {
+  "id": "46",
+  "name": "TERRACOTTA_PURPLE",
+  "color": [122, 73, 88],
+  "blocks": ["Purple Terracotta", "Purple Shulker Box"]
+}, {
+  "id": "47",
+  "name": "TERRACOTTA_BLUE",
+  "color": [76, 62, 92],
+  "blocks": ["Blue Terracotta"]
+}, {
+  "id": "48",
+  "name": "TERRACOTTA_BROWN",
+  "color": [76, 50, 35],
+  "blocks": ["Brown Terracotta"]
+}, {
+  "id": "49",
+  "name": "TERRACOTTA_GREEN",
+  "color": [76, 82, 42],
+  "blocks": ["Green Terracotta"]
+}, {
+  "id": "50",
+  "name": "TERRACOTTA_RED",
+  "color": [142, 60, 46],
+  "blocks": ["Red Terracotta"]
+}, {
+  "id": "51",
+  "name": "TERRACOTTA_BLACK",
+  "color": [37, 22, 16],
+  "blocks": ["Black Terracotta"]
+}]

@@ -1,0 +1,315 @@
+=== 基色 ===
+地图会根据方块的材质来为它们着色。每个材质都有一个基色，它会乘以135, 180, 220或255，再除以255来得到地图色。以下的每个基色都会与四个地图色相关联——将基色ID乘以4来得到第一个地图色ID。
+{{/header|
+
+{{/entry
+| id = 0 NONE
+| blocks = {{BlockLink|Air}}、{{BlockLink|Void Air}}、{{BlockLink|Cave Air}}、{{BlockLink|Barrier}}、{{BlockLink|Redstone Lamp}}、{{BlockLink|Cake}}、{{BlockLink|Powered Rail}}、{{BlockLink|Detector Rail}}、{{BlockLink|Torch}}、{{BlockLink|Redstone Wire}}、<br>{{BlockLink|Ladder}}、{{BlockLink|Rail}}、{{BlockLink|Lever}}、{{BlockLink|Redstone Torch}}、{{BlockLink|Button}}, {{BlockLink|Redstone Repeater}}、{{BlockLink|Tripwire Hook}}、{{BlockLink|Tripwire}}、{{BlockLink|Flower Pot}}、{{BlockLink|Heads}}、<br>{{BlockLink|Redstone Comparator}}、{{BlockLink|Activator Rail}}、{{BlockLink|End Rod}}、{{BlockLink|Glass}}、{{BlockLink|Glass Pane}}、{{BlockLink|Nether Portal}}、{{BlockLink|Structure Void}}、{{BlockLink|Iron Bars}}
+}}
+
+{{/entry
+| id = 1 GRASS
+| rgb = 127, 178, 56
+| blocks = {{BlockLink|Grass Block}}、{{BlockLink|Slime Block}}
+}}
+
+{{/entry
+| id = 2 SAND
+| rgb = 247, 233, 163
+| blocks = {{BlockLink|Sand}}、{{BlockLink|Birch Planks}}、{{BlockLink|Birch Log}}（竖直）、{{BlockLink|Stripped Birch Log}}、{{BlockLink|Birch Wood}}、{{BlockLink|Stripped Birch Wood}}、{{BlockLink|Birch Sign}}、<br>{{BlockLink|Birch Pressure Plate}}、{{BlockLink|Birch Trapdoor}}、{{BlockLink|Birch Stairs}}、{{BlockLink|Birch Slab}}、{{BlockLink|Birch Fence Gate}}、{{BlockLink|Birch Fence}}、{{BlockLink|Birch Door}}、<br>{{BlockLink|Sandstone}}（所有变种、所有台阶、所有楼梯、所有墙）、{{BlockLink|Glowstone}}、{{BlockLink|End Stone}}、{{BlockLink|End Stone Bricks}}（台阶、楼梯、墙）、{{BlockLink|Bone Block}}、<br>{{BlockLink|Turtle Egg}}、{{BlockLink|Scaffolding}}
+}}
+
+{{/entry
+| id = 3 WOOL
+| rgb = 199, 199, 199
+| blocks = {{BlockLink|Cobweb}}、{{BlockLink|Mushroom Stem}}、{{BlockLink|Beds}}（头部）
+}}
+
+{{/entry
+| id = 4 FIRE
+| rgb = 255, 0, 0
+| blocks = {{BlockLink|Lava}}、{{BlockLink|TNT}}、{{BlockLink|Fire}}、{{BlockLink|Redstone Block}}
+}}
+
+{{/entry
+| id = 5 ICE
+| rgb = 160, 160, 255
+| blocks = {{BlockLink|Ice}}、{{BlockLink|Frosted Ice}}、{{BlockLink|Packed Ice}}、{{BlockLink|Blue Ice}}
+}}
+
+{{/entry
+| id = 6 METAL
+| rgb = 167, 167, 167
+| blocks = {{BlockLink|Block of Iron}}、{{BlockLink|Iron Door}}、{{BlockLink|Brewing Stand}}、{{BlockLink|Heavy Weighted Pressure Plate}}、{{BlockLink|Iron Trapdoor}}、{{BlockLink|Lantern}}、{{BlockLink|Anvil}}、{{BlockLink|Grindstone}}
+}}
+
+{{/entry
+| id = 7 PLANT
+| rgb = 0, 124, 0
+| blocks = {{BlockLink|Saplings}}、{{BlockLink|Flowers}}、{{BlockLink|Mushrooms}}、{{BlockLink|Wheat}}, {{BlockLink|Sugar Cane}}、{{BlockLink|Pumpkin Stem}}、{{BlockLink|Melon Stem}}、{{BlockLink|Lily Pad}}、{{BlockLink|Cocoa}}、{{BlockLink|Carrots}}、{{BlockLink|Potatoes}}、<br>{{BlockLink|Beetroots}}、{{BlockLink|Sweet Berry Bush}}、{{BlockLink|Grass}}、{{BlockLink|Fern}}、{{BlockLink|Vines}}、{{BlockLink|Leaves}}、{{BlockLink|Cactus}}、{{BlockLink|Bamboo}}
+}}
+
+{{/entry
+| id = 8 SNOW
+| rgb = 255, 255, 255
+| blocks = {{BlockLink|Snow}}、{{BlockLink|Snow Block}}、{{BlockLink|White Bed}}（尾部）、{{BlockLink|White Wool}}、{{BlockLink|White Stained Glass}}、{{BlockLink|White Stained Glass Pane}}、{{BlockLink|White Carpet}}、{{BlockLink|White Banner}}、<br>{{BlockLink|White Shulker Box}}、{{BlockLink|White Glazed Terracotta}}、{{BlockLink|White Concrete}}、{{BlockLink|White Concrete Powder}}
+}}
+
+{{/entry
+| id = 9 CLAY
+| rgb = 164, 168, 184
+| blocks = {{BlockLink|Clay}}、{{BlockLink|Infested Blocks}}（石头、圆石、石砖、苔石、苔石砖、裂石砖、錾制石砖）
+}}
+
+{{/entry
+| id = 10 DIRT
+| rgb = 151, 109, 77
+| blocks = {{BlockLink|Dirt}}、{{BlockLink|Coarse Dirt}}、{{BlockLink|Farmland}}、{{BlockLink|Grass Path}}、{{BlockLink|Granite}}（台阶、楼梯、墙）、{{BlockLink|Polished Granite}}（台阶、楼梯）、{{BlockLink|Jungle Planks}}、<br>{{BlockLink|Jungle Log}}（竖直）、{{BlockLink|Stripped Jungle Log}}、{{BlockLink|Jungle Wood}}、{{BlockLink|Stripped Jungle Wood}}、{{BlockLink|Jungle Sign}}、{{BlockLink|Jungle Pressure Plate}}、<br>{{BlockLink|Jungle Trapdoor}}、{{BlockLink|Jungle Stairs}}、{{BlockLink|Jungle Slab}}、{{BlockLink|Jungle Fence Gate}}、{{BlockLink|Jungle Fence}}、{{BlockLink|Jungle Door}}、{{BlockLink|Jukebox}}、{{BlockLink|Brown Mushroom Block}}
+}}
+
+{{/entry
+| id = 11 STONE
+| rgb = 112, 112, 112
+| blocks = {{BlockLink|Stone Slab}}、{{BlockLink|Stone Stairs}}、{{BlockLink|Andesite}}（台阶、楼梯、墙）、{{BlockLink|Polished Andesite}}（台阶、楼梯）、{{BlockLink|Cobblestone}}（台阶、楼梯）、{{BlockLink|Bedrock}}、<br>{{BlockLink|Gold Ore}}、{{BlockLink|Iron Ore}}、{{BlockLink|Coal Ore}}、{{BlockLink|Lapis Lazuli Ore}}、{{BlockLink|Dispenser}}、{{BlockLink|Mossy Cobblestone}}（台阶、楼梯、墙）、{{BlockLink|Spawner}}、{{BlockLink|Diamond Ore}}、<br>{{BlockLink|Furnace}}、{{BlockLink|Stone Pressure Plate}}、{{BlockLink|Redstone Ore}}、{{BlockLink|Stone Bricks}}（所有变种、所有台阶、所有楼梯、所有墙）、{{BlockLink|Emerald Ore}}、{{BlockLink|Ender Chest}}、<br>{{BlockLink|Dropper}}、{{BlockLink|Smooth Stone}}（台阶、楼梯）、{{BlockLink|Observer}}、{{BlockLink|Smoker}}、{{BlockLink|Blast Furnace}}、{{BlockLink|Stonecutter}}、{{BlockLink|Sticky Piston}}、{{BlockLink|Piston}}、{{BlockLink|Piston Head}}、<br>{{BlockLink|Gravel}}、{{BlockLink|Acacia Log}}（侧面）、{{BlockLink|Cauldron}}、{{BlockLink|Hopper}}
+}}
+
+{{/entry
+| id = 12 WATER
+| rgb = 64, 64, 255
+| blocks = {{BlockLink|Kelp}}、{{BlockLink|Seagrass}}、{{BlockLink|Water}}、{{BlockLink|Bubble Column}}
+}}
+
+{{/entry
+| id = 13 WOOD
+| rgb = 143, 119, 72
+| blocks = {{BlockLink|Oak Planks}}、{{BlockLink|Oak Log}}（竖直）、{{BlockLink|Stripped Oak Log}}、{{BlockLink|Oak Wood}}、{{BlockLink|Stripped Oak Wood}}、{{BlockLink|Oak Sign}}、{{BlockLink|Oak Door}}、{{BlockLink|Oak Pressure Plate}}、<br>{{BlockLink|Oak Fence}}、{{BlockLink|Oak Trapdoor}}、{{BlockLink|Oak Fence Gate}}、{{BlockLink|Oak Slab}}、{{BlockLink|Oak Stairs}}、{{BlockLink|Note Block}}、{{BlockLink|Bookshelf}}、{{BlockLink|Chest}}、{{BlockLink|Crafting Table}}、<br>{{BlockLink|Trapped Chest}}、{{BlockLink|Daylight Detector}}、{{BlockLink|Loom}}、{{BlockLink|Barrel}}、{{BlockLink|Cartography Table}}、{{BlockLink|Fletching Table}}、{{BlockLink|Lectern}}、{{BlockLink|Smithing Table}}、{{BlockLink|Composter}}、{{BlockLink|Bamboo Sapling}}、<br>{{BlockLink|Dead Bush}}、{{BlockLink|Petrified Oak Slab}}、{{BlockLink|Beehive}}、{{BlockLink|Bee Nest}}
+}}
+
+{{/entry
+| id = 14 QUARTZ
+| rgb = 255, 252, 245
+| blocks = {{BlockLink|Diorite}}、{{BlockLink|Polished Diorite}}、{{BlockLink|Birch Log}}（侧面）、{{BlockLink|Quartz Block}}（所有变种、所有台阶、所有楼梯）、{{BlockLink|Sea Lantern}}
+}}
+
+{{/entry
+| id = 15 COLOR_ORANGE
+| rgb = 216, 127, 51
+| blocks = {{BlockLink|Acacia Planks}}、{{BlockLink|Acacia Log}}（竖直）、{{BlockLink|Stripped Acacia Log}}、{{BlockLink|Stripped Acacia Wood}}、{{BlockLink|Acacia Sign}}、{{BlockLink|Acacia Trapdoor}}、<br>{{BlockLink|Acacia Slab}}、{{BlockLink|Red Sand}}、{{BlockLink|Orange Wool}}、{{BlockLink|Orange Carpet}}、{{BlockLink|Orange Shulker Box}}、{{BlockLink|Orange Bed}}（尾部）、{{BlockLink|Orange Stained Glass}}、<br>{{BlockLink|Orange Stained Glass Pane}}、{{BlockLink|Orange Banner}}、{{BlockLink|Orange Glazed Terracotta}}、{{BlockLink|Orange Concrete}}、{{BlockLink|Orange Concrete Powder}}、{{BlockLink|Pumpkin}}、{{BlockLink|Carved Pumpkin}}、<br>{{BlockLink|Jack o'Lantern}}, {{BlockLink|Terracotta}}、{{BlockLink|Red Sandstone}}（所有变种、所有楼梯、所有台阶、所有墙）、{{BlockLink|Honey Block}}、{{BlockLink|Honeycomb Block}}
+}}
+
+{{/entry
+| id = 16 COLOR_MAGENTA
+| rgb = 178, 76, 216
+| blocks = {{BlockLink|Magenta Wool}}、{{BlockLink|Magenta Carpet}}、{{BlockLink|Magenta Shulker Box}}、{{BlockLink|Magenta Bed}}（尾部）、{{BlockLink|Magenta Stained Glass}}、{{BlockLink|Magenta Stained Glass Pane}}、<br>{{BlockLink|Magenta Banner}}、{{BlockLink|Magenta Glazed Terracotta}}、{{BlockLink|Magenta Concrete}}、{{BlockLink|Magenta Concrete Powder}}、{{BlockLink|Purpur Block}}（所有变种、台阶、楼梯）
+}}
+
+{{/entry
+| id = 17 COLOR_LIGHT_BLUE
+| rgb = 102, 153, 216
+| blocks = {{BlockLink|Light Blue Wool}}、{{BlockLink|Light Blue Carpet}}、{{BlockLink|Light Blue Shulker Box}}、{{BlockLink|Light Blue Bed}}（尾部）、{{BlockLink|Light Blue Stained Glass}}、{{BlockLink|Light Blue Stained Glass Pane}}、<br>{{BlockLink|Light Blue Banner}}、{{BlockLink|Light Blue Glazed Terracotta}}、{{BlockLink|Light Blue Concrete}}、{{BlockLink|Light Blue Concrete Powder}}
+}}
+
+{{/entry
+| id = 18 COLOR_YELLOW
+| rgb = 229, 229, 51
+| blocks = {{BlockLink|Sponge}}、{{BlockLink|Wet Sponge}}、{{BlockLink|Yellow Wool}}、{{BlockLink|Yellow Carpet}}、{{BlockLink|Yellow Shulker Box}}、{{BlockLink|Yellow Bed}}（尾部）、{{BlockLink|Yellow Stained Glass}}、<br>{{BlockLink|Yellow Stained Glass Pane}}、{{BlockLink|Yellow Banner}}、{{BlockLink|Yellow Glazed Terracotta}}、{{BlockLink|Yellow Concrete}}、{{BlockLink|Yellow Concrete Powder}}、{{BlockLink|Hay Bale}}、{{BlockLink|Horn Coral Block}}、<br>{{BlockLink|Horn Coral}}、{{BlockLink|Horn Coral Fan}}
+}}
+
+{{/entry
+| id = 19 COLOR_LIGHT_GREEN
+| rgb = 127, 204, 25
+| blocks = {{BlockLink|Lime Wool}}、{{BlockLink|Lime Carpet}}、{{BlockLink|Lime Shulker Box}}、{{BlockLink|Lime Bed}}（尾部）、{{BlockLink|Lime Stained Glass}}、{{BlockLink|Lime Stained Glass Pane}}、<br>{{BlockLink|Lime Banner}}、{{BlockLink|Lime Glazed Terracotta}}、{{BlockLink|Lime Concrete}}、{{BlockLink|Lime Concrete Powder}}、{{BlockLink|Melon}}
+}}
+
+{{/entry
+| id = 20 COLOR_PINK
+| rgb = 242, 127, 165
+| blocks = {{BlockLink|Pink Wool}}、{{BlockLink|Pink Carpet}}、{{BlockLink|Pink Shulker Box}}、{{BlockLink|Pink Bed}}（尾部）、{{BlockLink|Pink Stained Glass}}、{{BlockLink|Pink Stained Glass Pane}}、<br>{{BlockLink|Pink Banner}}、{{BlockLink|Pink Glazed Terracotta}}、{{BlockLink|Pink Concrete}}、{{BlockLink|Pink Concrete Powder}}、{{BlockLink|Brain Coral Block}}、{{BlockLink|Brain Coral}}、{{BlockLink|Brain Coral Fan}}
+}}
+
+{{/entry
+| id = 21 COLOR_GRAY
+| rgb = 76, 76, 76
+| blocks = {{BlockLink|Acacia Wood}}、{{BlockLink|Gray Wool}}、{{BlockLink|Gray Carpet}}、{{BlockLink|Gray Shulker Box}}、{{BlockLink|Gray Bed}}（尾部）、{{BlockLink|Gray Stained Glass}}、{{BlockLink|Gray Stained Glass Pane}}、<br>{{BlockLink|Gray Banner}}、{{BlockLink|Gray Glazed Terracotta}}、{{BlockLink|Gray Concrete}}、{{BlockLink|Gray Concrete Powder}}、{{BlockLink|Dead Coral Blocks}}、{{BlockLink|Dead Coral}}、{{BlockLink|Dead Coral Fans}}
+}}
+
+{{/entry
+| id = 22 COLOR_LIGHT_GRAY
+| rgb = 153, 153, 153
+| blocks = {{BlockLink|Light Gray Wool}}、{{BlockLink|Light Gray Carpet}}、{{BlockLink|Light Gray Shulker Box}}、{{BlockLink|Light Gray Bed}}（尾部）、{{BlockLink|Light Gray Stained Glass}}、{{BlockLink|Light Gray Stained Glass Pane}}、<br>{{BlockLink|Light Gray Banner}}、{{BlockLink|Light Gray Glazed Terracotta}}、{{BlockLink|Light Gray Concrete}}、{{BlockLink|Light Gray Concrete Powder}}、{{BlockLink|Structure Block}}、{{BlockLink|Jigsaw Block}}
+}}
+
+{{/entry
+| id = 23 COLOR_CYAN
+| rgb = 76, 127, 153
+| blocks = {{BlockLink|Cyan Wool}}、{{BlockLink|Cyan Carpet}}、{{BlockLink|Cyan Shulker Box}}、{{BlockLink|Cyan Bed}}（尾部）、{{BlockLink|Cyan Stained Glass}}、{{BlockLink|Cyan Stained Glass Pane}}、{{BlockLink|Cyan Banner}}、<br>{{BlockLink|Cyan Glazed Terracotta}}、{{BlockLink|Cyan Concrete}}、{{BlockLink|Cyan Concrete Powder}}、{{BlockLink|Prismarine}}（台阶、楼梯、墙）
+}}
+
+{{/entry
+| id = 24 COLOR_PURPLE
+| rgb = 127, 63, 178
+| blocks = {{BlockLink|Shulker Box}}、{{BlockLink|Purple Wool}}、{{BlockLink|Purple Carpet}}、{{BlockLink|Purple Bed}}（尾部）、{{BlockLink|Purple Stained Glass}}、{{BlockLink|Purple Stained Glass Pane}}、{{BlockLink|Purple Banner}}、<br>{{BlockLink|Purple Glazed Terracotta}}、{{BlockLink|Purple Concrete}}、{{BlockLink|Purple Concrete Powder}}、{{BlockLink|Mycelium}}、{{BlockLink|Chorus Plant}}、{{BlockLink|Chorus Flower}}、{{BlockLink|Repeating Command Block}}、<br>{{BlockLink|Bubble Coral Block}}、{{BlockLink|Bubble Coral}}、{{BlockLink|Bubble Coral Fan}}
+}}
+
+{{/entry
+| id = 25 COLOR_BLUE
+| rgb = 51, 76, 178
+| blocks = {{BlockLink|Blue Wool}}、{{BlockLink|Blue Carpet}}、{{BlockLink|Blue Shulker Box}}、{{BlockLink|Blue Bed}}（尾部）、{{BlockLink|Blue Stained Glass}}、{{BlockLink|Blue Stained Glass Pane}}、{{BlockLink|Blue Banner}}、<br>{{BlockLink|Blue Glazed Terracotta}}、{{BlockLink|Blue Concrete}}、{{BlockLink|Blue Concrete Powder}}、{{BlockLink|Tube Coral Block}}、{{BlockLink|Tube Coral}}、{{BlockLink|Tube Coral Fan}}
+}}
+
+{{/entry
+| id = 26 COLOR_BROWN
+| rgb = 102, 76, 51
+| blocks = {{BlockLink|Dark Oak Planks}}、{{BlockLink|Dark Oak Log}}、{{BlockLink|Stripped Dark Oak Log}}、{{BlockLink|Dark Oak Wood}}、{{BlockLink|Stripped Dark Oak Wood}}、{{BlockLink|Dark Oak Sign}}、<br>{{BlockLink|Dark Oak Pressure Plate}}、{{BlockLink|Dark Oak Trapdoor}}、{{BlockLink|Dark Oak Stairs}}、{{BlockLink|Dark Oak Slab}}、{{BlockLink|Dark Oak Fence Gate}}、{{BlockLink|Dark Oak Fence}}、<br>{{BlockLink|Dark Oak Door}}、{{BlockLink|Spruce Log}}（侧面）、{{BlockLink|Brown Wool}}、{{BlockLink|Brown Carpet}}、{{BlockLink|Brown Shulker Box}}、{{BlockLink|Brown Bed}}（尾部）、{{BlockLink|Brown Stained Glass}}、<br>{{BlockLink|Brown Stained Glass Pane}}、{{BlockLink|Brown Banner}}、{{BlockLink|Brown Glazed Terracotta}}、{{BlockLink|Brown Concrete}}、{{BlockLink|Brown Concrete Powder}}、{{BlockLink|Soul Sand}}、{{BlockLink|Command Block}}
+}}
+
+{{/entry
+| id = 27 COLOR_GREEN
+| rgb = 102, 127, 51
+| blocks = {{BlockLink|Green Wool}}、{{BlockLink|Green Carpet}}、{{BlockLink|Green Shulker Box}}、{{BlockLink|Green Bed}}（尾部）、{{BlockLink|Green Stained Glass}}、{{BlockLink|Green Stained Glass Pane}}、{{BlockLink|Green Banner}}、<br>{{BlockLink|Green Glazed Terracotta}}、{{BlockLink|Green Concrete}}、{{BlockLink|Green Concrete Powder}}、{{BlockLink|End Portal Frame}}、{{BlockLink|Chain Command Block}}、{{BlockLink|Dried Kelp Block}}、{{BlockLink|Sea Pickle}}
+}}
+
+{{/entry
+| id = 28 COLOR_RED
+| rgb = 153, 51, 51
+| blocks = {{BlockLink|Red Wool}}、{{BlockLink|Red Carpet}}、{{BlockLink|Red Shulker Box}}、{{BlockLink|Red Bed}}（尾部）、{{BlockLink|Red Stained Glass}}、{{BlockLink|Red Stained Glass Pane}}、{{BlockLink|Red Banner}}、<br>{{BlockLink|Red Glazed Terracotta}}、{{BlockLink|Red Concrete}}、{{BlockLink|Red Concrete Powder}}、{{BlockLink|Bricks}}（台阶、楼梯、墙）、{{BlockLink|Red Mushroom Block}}、{{BlockLink|Nether Wart}}、<br>{{BlockLink|Enchanting Table}}、{{BlockLink|Nether Wart Block}}、{{BlockLink|Fire Coral Block}}、{{BlockLink|Fire Coral}}、{{BlockLink|Fire Coral Fan}}
+}}
+
+{{/entry
+| id = 29 COLOR_BLACK
+| rgb = 25, 25, 25
+| blocks = {{BlockLink|Black Wool}}、{{BlockLink|Black Carpet}}、{{BlockLink|Black Shulker Box}}、{{BlockLink|Black Bed}}（尾部）、{{BlockLink|Black Stained Glass}}、{{BlockLink|Black Stained Glass Pane}}、{{BlockLink|Black Banner}}、<br>{{BlockLink|Black Glazed Terracotta}}、{{BlockLink|Black Concrete}}、{{BlockLink|Black Concrete Powder}}、{{BlockLink|Obsidian}}、{{BlockLink|End Portal}}、{{BlockLink|Dragon Egg}}、{{BlockLink|Block of Coal}}、<br>{{BlockLink|End Gateway}}
+}}
+
+{{/entry
+| id = 30 GOLD
+| rgb = 250, 238, 77
+| blocks = {{BlockLink|Block of Gold}}、{{BlockLink|Light Weighted Pressure Plate}}、{{BlockLink|Bell}}
+}}
+
+{{/entry
+| id = 31 DIAMOND
+| rgb = 92, 219, 213
+| blocks = {{BlockLink|Block of Diamond}}、{{BlockLink|Beacon}}、{{BlockLink|Prismarine Bricks}}（台阶、楼梯）、{{BlockLink|Dark Prismarine}}（台阶、楼梯）、{{BlockLink|Conduit}}
+}}
+
+{{/entry
+| id = 32 LAPIS
+| rgb = 74, 128, 255
+| blocks = {{BlockLink|Lapis Lazuli Block}}
+}}
+
+{{/entry
+| id = 33 EMERALD
+| rgb = 0, 217, 58
+| blocks = {{BlockLink|Block of Emerald}}
+}}
+
+{{/entry
+| id = 34 PODZOL
+| rgb = 129, 86, 49
+| blocks = {{BlockLink|Podzol}}、{{BlockLink|Spruce Planks}}、{{BlockLink|Spruce Log}}（竖直）、{{BlockLink|Stripped Spruce Log}}、{{BlockLink|Spruce Wood}}、{{BlockLink|Stripped Spruce Wood}}、{{BlockLink|Spruce Sign}}、<br>{{BlockLink|Spruce Pressure Plate}}、{{BlockLink|Spruce Trapdoor}}、{{BlockLink|Spruce Stairs}}、{{BlockLink|Spruce Slab}}、{{BlockLink|Spruce Fence Gate}}、{{BlockLink|Spruce Fence}}、{{BlockLink|Spruce Door}}、<br>{{BlockLink|Oak Log}}（侧面）、{{BlockLink|Jungle Log}}（侧面）、{{BlockLink|Campfire}}
+}}
+
+{{/entry
+| id = 35 NETHER
+| rgb = 112, 2, 0
+| blocks = {{BlockLink|Netherrack}}、{{BlockLink|Nether Bricks}}（栅栏、台阶、楼梯、墙）、{{BlockLink|Nether Quartz Ore}}、{{BlockLink|Magma Block}}、{{BlockLink|Red Nether Bricks}}（台阶、楼梯、墙）
+}}
+
+{{/entry
+| id = 36 TERRACOTTA_WHITE
+| rgb = 209, 177, 161
+| blocks = {{BlockLink|White Terracotta}}
+}}
+
+{{/entry
+| id = 37 TERRACOTTA_ORANGE
+| rgb = 159, 82, 36
+| blocks = {{BlockLink|Orange Terracotta}}
+}}
+
+{{/entry
+| id = 38 TERRACOTTA_MAGENTA
+| rgb = 149, 87, 108
+| blocks = {{BlockLink|Magenta Terracotta}}
+}}
+
+{{/entry
+| id = 39 TERRACOTTA_LIGHT_BLUE
+| rgb = 112, 108, 138
+| blocks = {{BlockLink|Light Blue Terracotta}}
+}}
+
+{{/entry
+| id = 40 TERRACOTTA_YELLOW
+| rgb = 186, 133, 36
+| blocks = {{BlockLink|Yellow Terracotta}}
+}}
+
+{{/entry
+| id = 41 TERRACOTTA_LIGHT_GREEN
+| rgb = 103, 117, 53
+| blocks = {{BlockLink|Lime Terracotta}}
+}}
+
+{{/entry
+| id = 42 TERRACOTTA_PINK
+| rgb = 160, 77, 78
+| blocks = {{BlockLink|Pink Terracotta}}
+}}
+
+{{/entry
+| id = 43 TERRACOTTA_GRAY
+| rgb = 57, 41, 35
+| blocks = {{BlockLink|Gray Terracotta}}
+}}
+
+{{/entry
+| id = 44 TERRACOTTA_LIGHT_GRAY
+| rgb = 135, 107, 98
+| blocks = {{BlockLink|Light Gray Terracotta}}
+}}
+
+{{/entry
+| id = 45 TERRACOTTA_CYAN
+| rgb = 87, 92, 92
+| blocks = {{BlockLink|Cyan Terracotta}}
+}}
+
+{{/entry
+| id = 46 TERRACOTTA_PURPLE
+| rgb = 122, 73, 88
+| blocks = {{BlockLink|Purple Terracotta}}、{{BlockLink|Purple Shulker Box}}
+}}
+
+{{/entry
+| id = 47 TERRACOTTA_BLUE
+| rgb = 76, 62, 92
+| blocks = {{BlockLink|Blue Terracotta}}
+}}
+
+{{/entry
+| id = 48 TERRACOTTA_BROWN
+| rgb = 76, 50, 35
+| blocks = {{BlockLink|Brown Terracotta}}
+}}
+
+{{/entry
+| id = 49 TERRACOTTA_GREEN
+| rgb = 76, 82, 42
+| blocks = {{BlockLink|Green Terracotta}}
+}}
+
+{{/entry
+| id = 50 TERRACOTTA_RED
+| rgb = 142, 60, 46
+| blocks = {{BlockLink|Red Terracotta}}
+}}
+
+{{/entry
+| id = 51 TERRACOTTA_BLACK
+| rgb = 37, 22, 16
+| blocks = {{BlockLink|Black Terracotta}}
+}}
+}}

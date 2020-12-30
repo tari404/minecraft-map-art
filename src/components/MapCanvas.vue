@@ -2,6 +2,7 @@
   <div>
     <div>
       <input type="file" accept="image/*" @change="onSelectedFile">
+      <button @click="download">Download</button>
       <!-- or -->
       <!-- <label for="url">Image URL</label><input name="url" type="text" v-model="path" @change="onInputPath"> -->
     </div>
@@ -62,7 +63,7 @@ const blockType = [
   // 1
   '草方块',
   '末地石',
-  '蜘蛛网',
+  '蘑菇柄',
   '红石块',
 
   // 5
@@ -300,6 +301,9 @@ export default {
         })
       })
       this.needs = needs.sort((a, b) => b.count - a.count)
+    },
+    download() {
+      window.OUT_PUT = JSON.stringify(this.output)
     }
   }
 }

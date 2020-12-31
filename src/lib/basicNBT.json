@@ -1,0 +1,151 @@
+{
+  "type": "compound",
+  "name": "",
+  "value": {
+    "MinecraftDataVersion": {
+      "type": "int",
+      "value": 2584
+    },
+    "Version": {
+      "type": "int",
+      "value": 5
+    },
+    "Metadata": {
+      "type": "compound",
+      "value": {
+        "TimeCreated": {
+          "type": "long",
+          "value": "NEED TO GENERATING!"
+        },
+        "TimeModified": {
+          "type": "long",
+          "value": "NEED TO GENERATING!"
+        },
+        "EnclosingSize": {
+          "type": "compound",
+          "value": {
+            "x": {
+              "type": "int",
+              "value": 128
+            },
+            "y": {
+              "type": "int",
+              "value": "NEED TO GENERATING!"
+            },
+            "z": {
+              "type": "int",
+              "value": 128
+            }
+          }
+        },
+        "Description": {
+          "type": "string",
+          "value": "Automatic generation by Web App: https://github.com/tari404/minecraft-map-art"
+        },
+        "RegionCount": {
+          "type": "int",
+          "value": 1
+        },
+        "TotalBlocks": {
+          "type": "int",
+          "value": 16384
+        },
+        "Author": {
+          "type": "string",
+          "value": "github:tari404"
+        },
+        "TotalVolume": {
+          "type": "int",
+          "value": "NEED TO GENERATING!"
+        },
+        "Name": {
+          "type": "string",
+          "value": "NEED TO GENERATING!"
+        }
+      }
+    },
+    "Regions": {
+      "type": "compound",
+      "value": {
+        "Unnamed": {
+          "type": "compound",
+          "value": {
+            "BlockStates": {
+              "type": "longArray",
+              "value": "NEED TO GENERATING!"
+            },
+            "PendingBlockTicks": {
+              "type": "list",
+              "value": {
+                "type": "end",
+                "value": []
+              }
+            },
+            "Position": {
+              "type": "compound",
+              "value": {
+                "x": {
+                  "type": "int",
+                  "value": 0
+                },
+                "y": {
+                  "type": "int",
+                  "value": 0
+                },
+                "z": {
+                  "type": "int",
+                  "value": 0
+                }
+              }
+            },
+            "BlockStatePalette": {
+              "type": "list",
+              "value": {
+                "type": "compound",
+                "value": "NEED TO GENERATING!"
+              }
+            },
+            "Size": {
+              "type": "compound",
+              "value": {
+                "x": {
+                  "type": "int",
+                  "value": 128
+                },
+                "y": {
+                  "type": "int",
+                  "value": "NEED TO GENERATING!"
+                },
+                "z": {
+                  "type": "int",
+                  "value": 128
+                }
+              }
+            },
+            "PendingFluidTicks": {
+              "type": "list",
+              "value": {
+                "type": "end",
+                "value": []
+              }
+            },
+            "TileEntities": {
+              "type": "list",
+              "value": {
+                "type": "end",
+                "value": []
+              }
+            },
+            "Entities": {
+              "type": "list",
+              "value": {
+                "type": "end",
+                "value": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

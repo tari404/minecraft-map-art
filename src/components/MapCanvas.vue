@@ -2,6 +2,7 @@
   <div>
     <div>
       <input type="file" accept="image/*" @change="onSelectedFile">
+      <input type="text" v-model="inputName" placeholder="input name">
       <button @click="download">Download</button>
       <!-- or -->
       <!-- <label for="url">Image URL</label><input name="url" type="text" v-model="path" @change="onInputPath"> -->
@@ -12,6 +13,7 @@
         <p v-for="(item, i) in needs" :key="i">
           <span>{{ blockType[item.cid] }}: </span><span>{{ item.count }}</span>
         </p>
+        <div>Max Height: {{ maxHeight }}</div>
       </div>
     </div>
     <div>
@@ -40,7 +42,11 @@
 </template>
 
 <script>
-import mapColor from '@/lib/output.json'
+import nbt from 'prismarine-nbt'
+import zlib from 'zlib'
+
+import mapColor from '@/lib/block.json'
+import basicNBT from '@/lib/basicNBT.json'
 
 const weight = [0.71, 0.86, 1]
 // const weight = [1, 1, 1]
@@ -150,12 +156,14 @@ export default {
 
       level: '0',
       columnStr: '0',
+      inputName: '',
       column: 0,
-      rowOffset: 0, 
+      rowOffset: 0,
 
       ctx: null,
       output,
       blockType,
+      maxHeight: 0,
 
       total,
       needs: [],
@@ -255,8 +263,21 @@ export default {
         this.finished = true
       }
     },
+    toInt(bytes) {
+      if (bytes.startsWith('1')) {
+        return -(~Number('0b' + bytes) + 1)
+      } else {
+        return Number('0b' + bytes)
+      }
+    },
+    toLongInt(bytes) {
+      const high = bytes.substr(0, 32)
+      const low = bytes.substr(32, 32)
+      return [this.toInt(high), this.toInt(low)]
+    },
     updateResult() {
       const needsMap = new Map()
+      let maxHeight = 0
       this.output.forEach((column, i) => {
         const totalMap = new Map()
         column.reduce((height, item, index) => {
@@ -282,6 +303,9 @@ export default {
               }
             }
           }
+          if (item.height > maxHeight) {
+            maxHeight = item.height
+          }
           return item.height
         }, 0)
         const total = []
@@ -301,9 +325,81 @@ export default {
         })
       })
       this.needs = needs.sort((a, b) => b.count - a.count)
+      this.maxHeight = maxHeight
     },
     download() {
-      window.OUT_PUT = JSON.stringify(this.output)
+      const h = this.maxHeight + 1
+      const v = 128 * 128 * h
+      const e = new Array(v).fill(0)
+      const map = new Map()
+      for (let i = 0; i < this.needs.length; i++) {
+        map.set(this.needs[i].cid, i + 1)
+      }
+      for (let i = 0; i < this.output.length; i++) {
+        const column = this.output[i]
+        for (let j = 0; j < column.length; j++) {
+          const item = column[j]
+          const index = v - (128 * 128 * item.height + 128 * j + i) - 1
+          e[index] = map.get(item.cid)
+        }
+      }
+      const l = (this.needs.length + 1).toString(2).length
+      const result = []
+      const restStr = e.reduceRight((str, type) => {
+        let newStr = type.toString(2).padStart(l, '0') + str
+        if (newStr.length >= 64) {
+          const bytes = newStr.substr(-64)
+          result.push(this.toLongInt(bytes))
+          newStr = newStr.substr(0, newStr.length - 64)
+        }
+        return newStr
+      }, '')
+      if (restStr.length) {
+        const str = restStr.padStart(64, '0')
+        result.push(this.toLongInt(str))
+      }
+
+      const blocks = this.needs.map(item => ({
+        Name: {
+          type: 'string',
+          value: mapColor[Number(item.cid) - 1].item[0]
+        }
+      }))
+      blocks.unshift({
+        Name: {
+          type: 'string',
+          value: 'minecraft:air'
+        }
+      })
+
+      const newNBTData = JSON.parse(JSON.stringify(basicNBT))
+      const now = this.toLongInt(Date.now().toString(2).padStart(64, '0'))
+
+      newNBTData.value.Metadata.value.TimeCreated.value = now // CreatedAt
+      newNBTData.value.Metadata.value.TimeModified.value = now // ModifiedAt
+
+      newNBTData.value.Metadata.value.TotalVolume.value = v // TotalVolume
+  
+      newNBTData.value.Metadata.value.Name.value = this.inputName || 'UNNAMED' // TotalVolume
+
+      newNBTData.value.Metadata.value.EnclosingSize.value.y.value = h // Height
+      newNBTData.value.Regions.value.Unnamed.value.Size.value.y.value = h // Height
+
+      newNBTData.value.Regions.value.Unnamed.value.BlockStates.value = result // BlockStates
+      newNBTData.value.Regions.value.Unnamed.value.BlockStatePalette.value.value = blocks // BlockStatePalette
+  
+      const nbtBuffer = nbt.writeUncompressed(newNBTData)
+      const fileBuffer = zlib.gzipSync(nbtBuffer)
+
+      const blob = new Blob([fileBuffer], {
+        type: 'application/octet-stream'
+      })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = (this.inputName || 'UNNAMED') + '.litematic'
+      a.click()
+      URL.revokeObjectURL(url)
     }
   }
 }
